@@ -1,0 +1,94 @@
+///Randomly Selected c++ Script I Had laying around
+//Vending Machine Program Created by Dylan Daugherty 02/12/2020
+
+//Introduce Libraries and Declare Functions
+#include <iostream>
+using namespace std;
+double AddMoney();
+void ReturnChange(double cash);
+//This is the main program. It includes a few variables, some settings for correct output of monetary values, and standard output to user.
+//It also includes two functions calls to two seperate functions.
+int main() 
+{
+    cout.setf(ios::fixed);
+    cout.setf(ios::showpoint);
+    cout.precision(2);
+    double cash = 0.00;
+    const double cost = 2.75;
+    cout << "Would You like an Ice Cream Sandwich? They Cost $2.75\n";
+//Function Calls
+    cash = AddMoney();
+    ReturnChange(cash);
+    
+}
+//Function Definition
+double AddMoney()
+{
+
+ //This defines or declares all variables used within the function
+    double cash;
+    char input;
+    double DValue = 1.00;
+    double qValue = .25;
+    double dValue = .10;
+    double nValue = .05;
+    cash = 0.00;
+    const double cost = 2.75;
+
+//This is standard output to user to explain the menu for entering monetary values into the program
+    cout << "Enter D for Dollar for $1.00\n";
+    cout << "Enter q for Quarters for $0.25\n";
+    cout << "Enter d for Dimes for $0.10\n";
+    cout << "Enter n for Nickels for $0.05\n";
+    
+//This While loop will continue to loop until enough money for an ice cream bar is accumulated. ($2.75)
+    while (cash < cost) {
+//User Input begins here, you can enter multiple values on one line and the program will parse your input and add money for each piece of input. 
+        cin >> input;
+//This is a switch statement that resolves based on user input, and adds the selected ammount of currency to the cash variable.
+        switch (input)
+        {
+        case 'D':
+            cash = cash + DValue;
+            cout << "Total Cash Inserted is now " << cash << "\n";
+            break;
+        case 'q':
+            cash = cash + qValue;
+            cout << "Total Cash Inserted is now " << cash << "\n";
+            break;
+        case 'd':
+            cash = cash + dValue;
+            cout << "Total Cash Inserted is now " << cash << "\n";
+            break;
+        case 'n':
+            cash = cash + nValue;
+            cout << "Total Cash Inserted is now " << cash << "\n";
+            break;
+        default:
+            cout << "You have not put in the correct value, try again!\n";
+            break;
+        }
+    }
+return cash;
+}
+//This is the next function definition, 2 variables are expressed here the function subtracts 2.75 from the cash variable that was evaluated in the last function.
+void ReturnChange(double cash)
+{
+double change;
+double cost = 2.75;
+        change = cash - cost;
+        cout << "Here is your change, $ " << change;
+        cout << "\nPlease Enjoy your Ice Cream!";
+
+
+}
+// Run program: Ctrl + F5 or Debug > Start Without Debugging menu
+// Debug program: F5 or Debug > Start Debugging menu
+
+// Tips for Getting Started: 
+//   1. Use the Solution Explorer window to add/manage files
+//   2. Use the Team Explorer window to connect to source control
+//   3. Use the Output window to see build output and other messages
+//   4. Use the Error List window to view errors
+//   5. Go to Project > Add New Item to create new code files, or Project > Add Existing Item to add existing code files to the project
+//   6. In the future, to open this project again, go to File > Open > Project and select the .sln file

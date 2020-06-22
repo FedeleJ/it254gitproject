@@ -1,0 +1,14 @@
+RGLK27844	14800	8	0
+RLVY26499	17450	10	2
+Moonroof
+Leather upholstery
+RLTS43992	18456.9	13	3
+5 spd manual transmission
+4WD, heavy duty suspension
+Trailer hitch
+RGMA74881	23050	6	0
+TLTD37882	29544.5	11	1
+ST Package
+RLTX26888	0	4	0
+RGMC33389	15000	3	0
+RGLL44488	23999	2	0

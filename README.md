@@ -1,3 +1,5 @@
-# it254gitproject
-If you're looking for the one for class, you are in the right spot.
+# Pizza
+This a script about Pizza
 
+There are many pizza toppings like meat lovers, pepperoni, and supreme.
+The best topping is meat lovers and stuffed crust with extra cheese.

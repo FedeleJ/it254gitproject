@@ -1,0 +1,2 @@
+E:\2020Q2\3CS132\C++\Modularity\Lab07\Debug\Lab07.exe
+E:\2020Q2\3CS132\C++\Modularity\Lab07\Debug\Lab07.pdb
